@@ -86,7 +86,8 @@ html, body {
 }
 
 .cards-list {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
 	margin-bottom: 60px;
 }
@@ -204,5 +205,17 @@ html, body {
 	align-items: center;
 	gap: 16px;
 	border: 1px solid #b3b3b3;
+	border-radius: 5px;
+}
+
+.new-incoming {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	padding: 4px 12px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #ffffff;
+	background-color: #00ff66;
 	border-radius: 5px;
 }
