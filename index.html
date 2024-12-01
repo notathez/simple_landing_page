@@ -4,14 +4,191 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>E-Commerce Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	
 	<div class="wrapper">
 
-		<header class="header"></header>
+		<!-- <header class="top-header">
+			<div class="container"></div>
+		</header>
 
-		<main class="main"></main>
+		<header class="header">
+
+			<div class="container">
+
+				<div class="header__inner"></div>
+
+				<a href="#" class="logo">Exclusive</a>
+
+				<nav class="header-menu">
+					<ul class="header-menu__list">		
+						<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Home</a></li>
+						<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Contact</a></li>
+						<li class="header-menu__list-item"><a href="" class="header-menu__list-link">About</a></li>
+						<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Sign Up</a></li>
+					</ul>
+				</nav>
+
+				<div class="header-search-bar"></div>
+
+			</div>
+		</header> -->
+
+		<main class="main">
+			<div class="container">
+				<section class="today">
+					<header class="section-header">
+						<h4 class="section-header__name">Today's</h4>
+					</header>
+					<div class="section-description">
+						<p class="description-text">Flash Sales</p>
+						<div class="sales-counter">
+							<div>
+								<p>Days</p>
+								<span>03</span>
+							</div>
+							<span>:</span>
+							<div>
+								<p>Hours</p>
+								<span>23</span>
+							</div>
+							<span>:</span>
+							<div>
+								<p>Minutes</p>
+								<span>19</span>
+							</div>
+							<span>:</span>
+							<div>
+								<p>Seconds</p>
+								<span>56</span>
+							</div>
+						</div>
+						<div class="paginator">
+							<img src="./images/arrow-left.svg" alt="arrow-left" class="arrow-left">
+							<img src="./images/arrow-right.svg" alt="arrow-right" class="arrow-right">
+						</div>
+					</div>
+					<div class="cards-list">
+						<div class="card">
+							<div class="card-image-wrapper">
+								<img src="./images/Frame 611.png" alt="HAVIT HV-G92 Gamepad" class="card-image">
+							</div>
+							<div class="discount">-40%</div>
+							<div class="card-options">
+								<img src="./images/heart-small.svg" alt="heart-small" class="card-options__icon">
+								<img src="./images/quick-view.svg" alt="quick-view" class="card-options__icon">
+							</div>
+							<div class="card-details">
+								<p class="card-name">HAVIT HV-G92 Gamepad</p>
+								<div class="card-price">
+									<p class="new-price">&#36;120</p>
+									<p class="old-price">&#36;160</p>
+								</div>
+								<p class="card-rate">88</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-image-wrapper">
+								<img src="./images/Frame 612.png" alt="K-900 Wired Keyboard" class="card-image">
+							</div>
+							<div class="discount">-35%</div>
+							<div class="card-options">
+								<img src="./images/heart-small.svg" alt="heart-small" class="card-options__icon">
+								<img src="./images/quick-view.svg" alt="quick-view" class="card-options__icon">
+							</div>
+							<div class="card-details">
+								<p class="card-name">AK-900 Wired Keyboard</p>
+								<div class="card-price">
+									<p class="new-price">&#36;960</p>
+									<p class="old-price">&#36;1160</p>
+								</div>
+								<p class="card-rate">75</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-image-wrapper">
+								<img src="./images/Frame 613.png" alt="card-image" class="card-image">
+							</div>
+							<div class="discount">-30%</div>
+							<div class="card-options">
+								<img src="./images/heart-small.svg" alt="heart-small" class="card-options__icon">
+								<img src="./images/quick-view.svg" alt="quick-view" class="card-options__icon">
+							</div>
+							<div class="card-details">
+								<p class="card-name">IPS LCD Gaming Monitor</p>
+								<div class="card-price">
+									<p class="new-price">&#36;370</p>
+									<p class="old-price">&#36;400</p>
+								</div>
+								<p class="card-rate">99</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-image-wrapper">
+								<img src="./images/Frame 614.png" alt="S-Series Comfort Chair" class="card-image">
+							</div>
+							<div class="discount">-25%</div>
+							<div class="card-options">
+								<img src="./images/heart-small.svg" alt="heart-small" class="card-options__icon">
+								<img src="./images/quick-view.svg" alt="quick-view" class="card-options__icon">
+							</div>
+							<div class="card-details">
+								<p class="card-name">S-Series Comfort Chair</p>
+								<div class="card-price">
+									<p class="new-price">&#36;120</p>
+									<p class="old-price">&#36;160</p>
+								</div>
+								<p class="card-rate">88</p>
+							</div>
+						</div>
+					</div>
+					<button class="button">View All Products</button>
+				</section>
+				<hr class="divider">
+				<!-- <section class="categories">
+					<header class="section-header">
+						<h4 class="section-header__name">Categories</h4>
+					</header>
+					<div class="section-description">
+						<p class="desciption-text">Browse By Category</p>
+						<div class="paginator"></div>
+					</div>
+					<div class="categories-list">
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">Phones</p>
+						</div>
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">Computers</p>
+						</div>
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">Smartwatch</p>
+						</div>
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">Camera</p>
+						</div>
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">HeadPhones</p>
+						</div>
+						<div class="category">
+							<img src="" alt="category">
+							<p class="category-name">Gaming</p>
+						</div>
+					</div>
+				</section> -->
+			</div>
+		
+
+		</main>
 
 		<footer class="footer"></footer>
 
