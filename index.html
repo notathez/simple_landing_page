@@ -43,10 +43,10 @@
 			<div class="container">
 				<section class="today">
 					<header class="section-header">
-						<h4 class="section-header__name">Today's</h4>
+						<h1 class="section-header__name">Today's</h1>
 					</header>
 					<div class="section-description">
-						<p class="description-text">Flash Sales</p>
+						<h2 class="description-text">Flash Sales</h2>
 						<div class="sales-counter">
 							<div>
 								<p>Days</p>
@@ -147,15 +147,17 @@
 							</div>
 						</div>
 					</div>
-					<button class="button">View All Products</button>
+					<div class="button-wrapper">					
+						<button class="button">View All Products</button>
+					</div>
 				</section>
 				<hr class="divider">
 				<section class="categories">
 					<header class="section-header">
-						<h4 class="section-header__name">Categories</h4>
+						<h1 class="section-header__name">Categories</h1>
 					</header>
 					<div class="section-description">
-						<p class="description-text">Browse By Category</p>
+						<h2 class="description-text">Browse By Category</h2>
 						<div class="paginator">
 							<img src="./images/icons/arrow-left.svg" alt="arrow-left" class="arrow-left">
 							<img src="./images/icons/arrow-right.svg" alt="arrow-right" class="arrow-right">
@@ -191,10 +193,13 @@
 				<hr class="divider">
 				<section class="this-month">
 					<header class="section-header">
-						<h4 class="section-header__name">This Month</h4>
+						<h1 class="section-header__name">This Month</h1>
 					</header>
 					<div class="section-description">
-						<p class="description-text">Best Selling Products</p>
+						<h2 class="description-text">Best Selling Products</h2>
+						<div class="button-wrapper">
+							<button class="button">View All</button>
+						</div>
 					</div>
 					<div class="cards-list">
 						<div class="card">
@@ -265,14 +270,42 @@
 							</div>
 						</div>
 					</div>
-					<button class="button">View All Products</button>
 				</section>
+				<div class="special-offer">
+					<div class="special-offer__left">
+						<p>Categories</p>
+						<h3>Enhance Your Music Experience</h3>
+						<div class="special-offer__counter">
+							<div>
+								<span>23</span>
+								<p>Hours</p>
+							</div>
+							<div>
+								<span>05</span>
+								<p>Days</p>
+							</div>
+							<div>
+								<span>59</span>
+								<p>Minutes</p>
+							</div>
+							<div>
+								<span>35</span>
+								<p>Seconds</p>
+							</div>
+						</div>
+						<button class="button">Buy Now!</button>
+					</div>
+					<div class="special-offer__right">
+						<img src="./images/JBL.png" alt="JBL">
+						<div class="special-offer__right-shadow"></div>
+					</div>
+				</div>
 				<section class="products">
 					<header class="section-header">
-						<h4 class="section-header__name">Our Products</h4>
+						<h1 class="section-header__name">Our Products</h1>
 					</header>
 					<div class="section-description">
-						<p class="description-text">Explore Our Products</p>
+						<h2 class="description-text">Explore Our Products</h2>
 						<div class="paginator">
 							<img src="./images/icons/arrow-left.svg" alt="arrow-left" class="arrow-left">
 							<img src="./images/icons/arrow-right.svg" alt="arrow-right" class="arrow-right">
@@ -410,16 +443,133 @@
 							</div>
 						</div>
 					</div>
-					<button class="button">View All Products</button>
+					<div class="button-wrapper">
+						<button class="button">View All Products</button>
+					</div>
 				</section>
 				<hr class="divider">
+				<!-- <section class="featured">
+					<header class="section-header">
+						<h1 class="section-header__name">Featured</h1>
+					</header>
+					<div class="section-description">
+						<h2 class="description-text">New Arrival</h2>
+					</div>
+					<div class="featured-cards">
+						<div class="playstation">
+						</div>
+						<div class="women-collection">
+						</div>
+						<div class="speakers">
+						</div>
+						<div class="perfume">
+						</div>
+					</div>
+				</section> -->
+				<section class="services">
+					<div class="services-item">
+						<img class="service-icon" src="./images/icons/services-1.png" alt="services-1">
+						<h6 class="service-name">FREE AND FAST DELIVERY</h6>
+						<p class="service-description">Free delivery for all orders over $140</p>
+					</div>
+					<div class="services-item">
+						<img class="service-icon" src="./images/icons/services-2.png" alt="services-2">
+						<h6 class="service-name">24/7 CUSTOMER SERVICE</h6>
+						<p class="service-description">Friendly 24/7 customer support</p>
+					</div>
+					<div class="services-item">
+						<img class="service-icon" src="./images/icons/services-3.png" alt="services-3">
+						<h6 class="service-name">MONEY BACK GUARANTEE</h6>
+						<p class="service-description">We return money within 30 days</p>
+					</div>
+				</section>
 			</div>
 		
 
 		</main>
 
-		<footer class="footer"></footer>
-
+		<footer class="footer">
+			<div class="container">
+				<nav class="footer-menu">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<h4 href="" class="footer-menu__exclusive">Exclusive</h4>
+						</li>
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Subscribe</p>
+						</li>
+						<li class="footer-menu__item">
+							<div class="input-wrapper">
+								<input type="text" class="footer-menu__input">
+								<img src="./images/icons/icon-send.svg" alt="send-icon">
+							</div>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Support</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">111 Bijoy sarani, Dhaka, <br>  DH 1515, Bangladesh.</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">exclusive@gmail.com</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">+88015-88888-9999</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Account</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">My Account</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Login / Register</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Cart</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Wishlist</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Shop</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Quick Link</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Privacy Policy</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Terms of Use</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">FAQ</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Contact</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Download App</p>
+						</li>
+						<li class="footer-menu__item">
+							<p class="footer-menu__description">Save $3 with App New User Only</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- <div class="copyright">
+				&copy; Copyright Rimel 2022. All right reserved
+			</div> -->
+		</footer>
 	</div>
 
 </body>
