@@ -37,7 +37,6 @@ html, body {
 	font-size: 16px;
 	font-weight: 600;
 	color:#db4444;
-	white-space: nowrap;
 }
 
 .section-header__name::before {
@@ -54,13 +53,12 @@ html, body {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .description-text {
-	/* margin-right: 87px; */
 	font-size: 36px;
 	font-weight: 600;
+	white-space: nowrap;
 }
 
 .sales-counter {
@@ -185,20 +183,46 @@ html, body {
 	text-decoration: line-through;
 }
 
+/* BUTTONS */
+
 .button-wrapper {
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 }
 
 .button {
 	font-size: 16px;
 	line-height: 1.5;
-	padding: 16px 48px;
-	color: #ffffff;
-	background-color: #db4444;
 	font-weight: 500;
 	border-radius: 5px;
 	border: none;
+}
+
+.button-primary {
+	padding: 16px 48px;
+	color: #ffffff;
+	background-color: #db4444;
+}
+
+.button-special-offer {
+	padding: 16px 48px;
+	color: #ffffff;
+	background-color: #00ff66;
+}
+
+.button-sign-red {
+	width: 100%;
+	padding: 16px 0;
+	color: #ffffff;
+	background-color: #db4444;
+}
+
+.button-sign-white {
+	width: 100%;
+	padding: 16px 0;
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .divider {
