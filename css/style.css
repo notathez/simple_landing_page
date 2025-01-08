@@ -183,6 +183,18 @@ html, body {
 	text-decoration: line-through;
 }
 
+.rate {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.card-rate {
+	font-size: 14px;
+	line-height: 1;
+	color:#808080;
+}
+
 /* BUTTONS */
 
 .button-wrapper {
