@@ -17,13 +17,27 @@ html, body {
 
 /* today's section */
 
+.section-description {
+	width: 100%;
+	display: flex;
+	gap: 87px;
+	margin-bottom: 40px;
+	align-items: end;
+}
+
+.section-header {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .section-header__name {
-	margin-bottom: 13px;
-	color:#db4444;
+	display: flex;
+	align-items: center;
 	font-size: 16px;
 	font-weight: 600;
-	display: flex; 
-  align-items: center;
+	color:#db4444;
+	white-space: nowrap;
 }
 
 .section-header__name::before {
@@ -36,14 +50,15 @@ html, body {
 	border-radius: 5px;
 }
 
-.section-description {
+.section-options {
+	width: 100%;
 	display: flex;
-	margin-bottom: 40px;
-	align-items: end;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .description-text {
-	margin-right: 87px;
+	/* margin-right: 87px; */
 	font-size: 36px;
 	font-weight: 600;
 }
