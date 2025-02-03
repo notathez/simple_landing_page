@@ -7,6 +7,16 @@
 html, body {
 	font-family: Poppins, sans-serif;
 	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	height: 100vh;
+}
+
+.catalog-menu__item:hover,
+.card:hover {
+	cursor: pointer;
 }
 
 .container {
@@ -774,4 +784,72 @@ html, body {
 	margin-bottom: 10px;
 	height: 1px;
 	background-color: #141414;
+}
+
+/* -------------- SIGNUP PAGE ----------*/ 
+
+.signup__inner {
+	padding: 60px 0 140px 0;
+	display: flex;
+	gap: 129px;
+}
+
+.signup__inner > img {
+	padding: 0;
+	height: 100%;
+}
+
+.signup-form {
+	padding: 125.5px 0;
+}
+
+.sign-input {
+	border: none;
+	border-bottom: 1px solid #808080;
+	outline: none;
+	line-height: 1.5;
+}
+
+.sign-input::-webkit-input-placeholder {
+	color: #999999;
+}
+
+
+/* NOT-FOUND PAGE */
+
+.roadmap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 80px 0 140px 0;
+	color: #808080;
+	font-size: 14px;
+}
+
+.separator {
+	margin: 0 5px;
+}
+
+.current-road {
+	color: #000000;
+}
+
+.not-found__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 140px;
+}
+
+.not-found__inner h1 {
+	font-size: 110px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.not-found__inner p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 80px;
 }
