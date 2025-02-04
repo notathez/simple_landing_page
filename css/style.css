@@ -25,6 +25,10 @@ body {
 	margin: 0 auto;
 }
 
+.main {
+	margin: 80px 0 140px 0;
+}
+
 .top-header {
 	background-color: #000000;
 }
@@ -416,6 +420,14 @@ body {
 	background-color: #db4444;
 }
 
+.button-secondary {
+	padding: 16px 48px;
+	color: #000000;
+	font-weight: 600;
+	background-color: transparent;
+	border: 2px solid #808080;
+}
+
 .button-special-offer {
 	padding: 16px 48px;
 	color: #ffffff;
@@ -654,7 +666,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 88px;
-	margin: 140px 0;
+	margin-top: 140px;
 }
 
 .services-item {
@@ -789,7 +801,7 @@ body {
 /* -------------- SIGNUP PAGE ----------*/ 
 
 .signup__inner {
-	padding: 60px 0 140px 0;
+	/* padding: 60px 0 140px 0; */
 	display: flex;
 	gap: 129px;
 }
@@ -813,7 +825,6 @@ body {
 .sign-input::-webkit-input-placeholder {
 	color: #999999;
 }
-
 
 /* NOT-FOUND PAGE */
 
@@ -839,7 +850,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 140px;
 }
 
 .not-found__inner h1 {
@@ -852,4 +862,24 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 80px;
+}
+
+/* WISHLIST */
+
+.wishlist__inner {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.wishlist-header {
+	font-size: 20px;
+}
+
+.wishlist-section-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
