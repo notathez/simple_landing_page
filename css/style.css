@@ -448,6 +448,14 @@ body {
 	background-color: #ffffff;
 }
 
+.button-icon {
+	padding: 4px;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .divider {
 	margin: 70px 0;
 	border: none;
@@ -888,12 +896,46 @@ body {
 
 .product-card {
 	display: flex;
+	gap: 70px;
 	margin-bottom: 140px;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 .product-name {
 	font-size: 24px;
 	font-weight: 600;
+}
+
+.product-rate {
+	display: flex;
+	align-items: center;
+}
+
+.reviews-counter {
+	margin: 0 16px 0 8px;
+	font-size: 14px;
+	color: #808080;
+}
+
+.product-availability {
+	display: flex;
+	font-size: 14px;
+	color: #66ffa3;
+}
+
+.product-availability::before {
+	display: inline-block;
+	content: '';
+	height: 1em;
+	width: 1px;
+	margin-right: 16px;
+	background-color: #808080;
+	vertical-align: middle;
 }
 
 .product-price {
@@ -904,9 +946,50 @@ body {
 	font-size: 14px;
 }
 
-.feature-list {
-	border: 2px solid #808080;
-	border-radius: 5px;
+.order-variants {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.order-variants::before {
+	display: inline-block;
+	margin-top: 24px;
+	content: '';
+	height: 1px;
+	width: 100%;
+	background-color: #808080;
+}
+
+.color-variants{
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.color-list {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.color-list__item {
+	display: block;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+}
+
+.color-list__item.active {
+	border: 2px solid #000000;
+	padding: 2px;
+}
+
+.color-list__item div {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%
 }
 
 .size-variants {
@@ -930,6 +1013,25 @@ body {
 	font-size: 14px;
 	font-weight: 600;
 	border: 1px solid #808080;
+	border-radius: 5px;
+}
+
+.purchaze-variants {
+	display: flex;
+	gap: 16px;
+}
+
+.amount-counter {
+	display: flex;
+	border: 1px solid #808080;
+}
+
+.amount {
+	font-size: 20px;
+}
+
+.feature-list {
+	border: 2px solid #808080;
 	border-radius: 5px;
 }
 
