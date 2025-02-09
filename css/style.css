@@ -14,6 +14,17 @@ body {
 	height: 100vh;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
 .catalog-menu__item:hover,
 .card:hover {
 	cursor: pointer;
@@ -412,6 +423,7 @@ body {
 	font-weight: 500;
 	border-radius: 5px;
 	border: none;
+	white-space: nowrap;
 }
 
 .button-primary {
@@ -448,12 +460,22 @@ body {
 	background-color: #ffffff;
 }
 
+.button-buy {
+	width: 100%;
+	padding: 10px 48px;
+	color: #ffffff;
+	background-color: #db4444;
+}
+
 .button-icon {
-	padding: 4px;
 	background-color: transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	border: 1px solid #808080;
+	border-radius: 5px;
+}
+
+.button-icon img {
+	padding: 4px;
+	vertical-align: middle;
 }
 
 .divider {
@@ -1019,19 +1041,46 @@ body {
 .purchaze-variants {
 	display: flex;
 	gap: 16px;
+	margin-bottom: 40px;
 }
 
-.amount-counter {
-	display: flex;
-	border: 1px solid #808080;
-}
-
-.amount {
+.quantity {
+	display: inline-flex;
 	font-size: 20px;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	padding: 0;
+}
+
+.quantity-minus,
+.quantity-plus {
+	border: none;
+	padding: 0;
+}
+
+.quantity-minus img,
+.quantity-plus img {
+	padding: 10px 8px;
+	vertical-align: middle;
+}
+
+.quantity-minus {
+	background-color: transparent;
+	border-right: 1px solid #808080;
+}
+
+.quantity-plus {
+	background-color: #db4444;
+	border-left: 1px solid #808080;
+}
+
+.quantity-value {
+	text-align: center;
+	border: none;
 }
 
 .feature-list {
-	border: 2px solid #808080;
+	border: 1px solid #808080;
 	border-radius: 5px;
 }
 
@@ -1047,10 +1096,6 @@ body {
 
 .feature-list__item:nth-child(1) {
 	border-bottom: 1px solid #808080;
-}
-
-.feature-list__item:nth-child(2) {
-	border-top: 1px solid #808080;
 }
 
 .feature-list__item div {
