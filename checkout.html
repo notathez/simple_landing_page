@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-Commerce Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+
+		<header class="top-header">
+			<div class="container">
+				<div class="top-header__inner">
+					<p>Summer Sale For all Swim Suits And Free Express Delivery - 0FF 50%!<a href="#">ShopNow</a></p>
+					<div class="language-select">
+						English
+						<img src="./images/icons/drop-down.svg" alt="drop-down icon">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<header class="header">
+
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="logo">Exclusive</a>
+					<nav class="header-menu">
+						<ul class="header-menu__list">		
+							<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Home</a></li>
+							<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Contact</a></li>
+							<li class="header-menu__list-item"><a href="" class="header-menu__list-link">About</a></li>
+							<li class="header-menu__list-item"><a href="" class="header-menu__list-link">Sign Up</a></li>
+						</ul>
+					</nav>
+					<div class="header-search-bar">
+						<div class="search-bar">
+							<input type="text" placeholder="What are you looking for?">
+							<img class="search-icon" src="./images/icons/search.svg" alt="search-icon">
+						</div>
+						<div class="action-bar">
+							<img src="./images/icons/wishlist.png" alt="wishlist">
+							<img src="./images/icons/cart1.png" alt="favorite">
+							<img src="./images/icons/user.png" alt="favorite">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="roadmap">
+					<span>Account</span>
+					<span class="separator">/</span>
+					<span>My Account</span>
+					<span class="separator">/</span>
+					<span>Product</span>
+					<span class="separator">/</span>
+					<span>View Cart</span>
+					<span class="separator">/</span>
+					<span class="current-road">CheckOut</span>
+				</div>
+				<div class="checkout__inner">
+					<h1>Billing Details</h1>
+					<form action="" class="billing-form">
+						<div class="billing-left">
+							<div class="field-list">
+								<div class="field">
+									<label for="first-name">First Name<span>*</span></label>
+									<input type="text" id="first-name" name="first_name" required>
+								</div>
+								<div class="field">
+									<label for="company-name">Company Name</label>
+									<input type="text" id="company-name" name="company_name">
+								</div>
+								<div class="field">
+									<label for="street-address">Street Address<span>*</span></label>
+									<input type="text" id="street-address" name="street_address" required>
+								</div>
+								<div class="field">
+									<label for="first-name">Apartment, floor, etc. (optional)</label>
+									<input type="text" id="apartment" name="apartment" required>
+								</div>
+								<div class="field">
+									<label for="first-name">Town/City<span>*</span></label>
+									<input type="text" id="city" name="city" required>
+								</div>
+								<div class="field">
+									<label for="first-name">Phone Number<span>*</span></label>
+									<input type="number" id="phone" name="phone" required>
+								</div>
+								<div class="field">
+									<label for="first-name">Email Address<span>*</span></label>
+									<input type="email" id="email" name="email" required>
+								</div>
+							</div>
+							<div class="checkbox-field">
+								<input type="checkbox" id="checkbox-save" name="checkbox_save">
+								<label for="checkbox-save">Save this information for faster check-out next time</label>
+							</div>
+						</div>
+						<div class="billing-right">
+							<div class="order-goods"></div>
+							<div class="order-price">
+								<div class="order-subtotal">
+									<p>Subtotal:</p>
+									<p>&#36;1750</p>
+								</div>
+								<div class="order-shipping">
+									<p>Shipping:</p>
+									<p>Free</p>
+								</div>
+								<div class="order-total">
+									<p>Total:</p>
+									<p>&#36;1750</p>
+								</div>
+							</div>
+							<div class="order-payment">
+								<label>
+									<input type="radio" name="payment-method" value="Bank">
+									Bank
+									<div>
+										<img src="./images/bkash.svg" alt="bkash">
+										<img src="./images/visa.svg" alt="visa">
+										<img src="./images/master-card.svg" alt=" master-card">
+										<img src="./images/nagad.svg" alt="nagad">
+									</div>
+								</label>
+								<label>
+									<input type="radio" name="payment-method" value="Cash">
+									Cash or delivery
+								</label>
+							</div>
+							<div class="order-coupon">
+								<input type="text" placeholder="Coupon Code">
+								<button class="button button-primary">Apply Coupon</button>
+							</div>
+							<button class="button button-primary">Place Order</button>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<nav class="footer-menu">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<h4 class="footer-menu__exclusive">Exclusive</h4>
+						</li>
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Subscribe</p>
+						</li>
+						<li class="footer-menu__item">
+							<p class="footer-menu__link">Get 10% off your first order</p>
+							<div class="input-wrapper">
+								<input type="text" class="footer-menu__input" placeholder="Enter your email">
+								<img class="send-icon" src="./images/icons/send-arrow.png" alt="send-icon">
+							</div>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Support</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">111 Bijoy sarani, Dhaka, <br>  DH 1515, Bangladesh.</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">exclusive@gmail.com</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">+88015-88888-9999</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Account</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">My Account</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Login / Register</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Cart</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Wishlist</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Shop</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Quick Link</p>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Privacy Policy</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Terms of Use</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">FAQ</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Contact</a>
+						</li>
+					</ul>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<p class="footer-menu__title">Download App</p>
+						</li>
+						<li class="footer-menu__item">
+							<p class="footer-menu__description">Save $3 with App New User Only</p>
+							<div class="app-download">
+								<img src="./images/qrcode1.png" alt="QRCode">
+								<div class="app-links">
+									<img src="./images/download-app.png" alt="App Store link">
+									<img src="./images/download-google.png" alt="Google Play link">
+								</div>
+							</div>
+						</li>
+						<li class="footer-menu__item">
+							<div class="socials">
+								<img src="./images/icons/icon-facebook.png" alt="Facebook">
+								<img src="./images/icons/icon-twitter.png" alt="Twitter">
+								<img src="./images/icons/icon-instagram.png" alt="Instagram">
+								<img src="./images/icons/icon-linkedin.png" alt="LinkedIn">
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="copyright">
+				&copy; Copyright Rimel 2022. All right reserved
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
