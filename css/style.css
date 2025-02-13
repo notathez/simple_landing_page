@@ -1177,11 +1177,11 @@ input[type="number"] {
 
 .billing-form {
 	display: flex;
-	gap: 173px;
+	justify-content: space-between;
 }
 
 .billing-left {
-	max-width: 470px;
+	width: 470px;
 }
 
 .checkout__inner h1{
@@ -1240,9 +1240,30 @@ input[type="number"] {
 }
 
 .billing-right {
+	padding-top: 16px;
+	width: 470px;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
+}
+
+.order-goods {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.order-goods__item {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.order-goods__item div { 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .order-price {
@@ -1268,22 +1289,31 @@ input[type="number"] {
 	gap: 16px;
 }
 
-.order-payment label {
+.order-payment__item {
 	font-size: 16px;
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
 
-.order-payment label input {
+.order-payment__item input {
+	margin: 0;
 	width: 20px;
 	height: 20px;
+	accent-color: #000000;
 }
 
-.order-payment div {
-	margin-left: 155px;
+.order-payment__item > div {
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.order-payment__icons {
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .order-coupon {
@@ -1292,6 +1322,7 @@ input[type="number"] {
 }
 
 .order-coupon input {
+	width: 100%;
 	border: 1px solid #999999;
 	padding: 16px 24px;
 	border-radius: 4px;

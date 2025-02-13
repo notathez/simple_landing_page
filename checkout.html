@@ -106,7 +106,22 @@
 							</div>
 						</div>
 						<div class="billing-right">
-							<div class="order-goods"></div>
+							<ul class="order-goods">
+								<li class="order-goods__item">
+									<img src="./images/Gamepad-Cart-Small.svg" alt="Gamepad">
+									<div>
+										<h3>H1 Gamepad</h3>
+										<p>&#36;650</p>
+									</div>
+								</li>
+								<li class="order-goods__item">
+									<img src="./images/Monitor-Cart-Small.svg" alt="Monitor">
+									<div>
+										<h3>H1 Gamepad</h3>
+										<p>&#36;650</p>
+									</div>
+								</li>
+							</ul>
 							<div class="order-price">
 								<div class="order-subtotal">
 									<p>Subtotal:</p>
@@ -122,19 +137,21 @@
 								</div>
 							</div>
 							<div class="order-payment">
-								<label>
+								<label class="order-payment__item">
 									<input type="radio" name="payment-method" value="Bank">
-									Bank
 									<div>
-										<img src="./images/bkash.svg" alt="bkash">
-										<img src="./images/visa.svg" alt="visa">
-										<img src="./images/master-card.svg" alt=" master-card">
-										<img src="./images/nagad.svg" alt="nagad">
+										<span>Bank</span>
+										<div class="order-payment__icons">
+											<img src="./images/bkash.svg" alt="bkash">
+											<img src="./images/visa.svg" alt="visa">
+											<img src="./images/master-card.svg" alt=" master-card">
+											<img src="./images/nagad.svg" alt="nagad">
+										</div>
 									</div>
 								</label>
-								<label>
-									<input type="radio" name="payment-method" value="Cash">
-									Cash or delivery
+								<label class="order-payment__item">
+									<input type="radio" name="payment-method" value="Cash" checked>
+									<span>Cash or delivery</span>
 								</label>
 							</div>
 							<div class="order-coupon">
