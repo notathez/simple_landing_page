@@ -13,6 +13,10 @@ html *, body * {
 	/* border: 1px solid green; */
 }
 
+body, input {
+	box-sizing: border-box;
+}
+
 body {
 	height: 100vh;
 }
@@ -449,18 +453,27 @@ input[type="number"] {
 	background-color: #00ff66;
 }
 
-.button-sign-red {
+.button-sign {
+	box-sizing: border-box;
 	width: 100%;
 	padding: 16px 0;
 	color: #ffffff;
+	font-weight: 500;
 	background-color: #db4444;
 }
 
-.button-sign-white {
+.button-sign-icon {
 	width: 100%;
+	height: 50px;
 	padding: 16px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
 	color: #000000;
 	background-color: #ffffff;
+	border: 1px solid	#999999;
+	border-radius: 4px;
 }
 
 .button-buy {
@@ -838,7 +851,7 @@ input[type="number"] {
 .signup__inner {
 	/* padding: 60px 0 140px 0; */
 	display: flex;
-	gap: 129px;
+	/* gap: 129px; */
 }
 
 .signup__inner > img {
@@ -847,18 +860,55 @@ input[type="number"] {
 }
 
 .signup-form {
+	width: 371px;
 	padding: 125.5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.sign-input {
+.signup-form h1 {
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.sign-fields {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin: 40px 0;
+}
+
+.sign-field {
+	padding: 8px 0;
 	border: none;
-	border-bottom: 1px solid #808080;
+	border-bottom: 1px solid #999999;
 	outline: none;
 	line-height: 1.5;
 }
 
-.sign-input::-webkit-input-placeholder {
+.sign-field::-webkit-input-placeholder {
 	color: #999999;
+}
+
+.sign-buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 32px;
+}
+
+.sign-to-login {
+	color: #4d4d4d;
+}
+
+.sign-to-login a {
+	color: #000000;
+	text-decoration: underline;
+	text-underline-offset: 6px;
 }
 
 /* NOT-FOUND PAGE */

@@ -60,12 +60,19 @@
 					<form action="#" class="signup-form">
 						<h1>Create an account</h1>
 						<p>Enter your details below</p>
-						<input class="sign-input" type="text" placeholder="Name">
-						<input class="sign-input" type="text" placeholder="Email or Phone Number">
-						<input class="sign-input" type="password" placeholder="Password">
-						<button>Create Account</button>
-						<button>Sign up with Google</button>
-						<p>Already have account? <a href="#">Log in</a></p>
+						<div class="sign-fields">
+							<input class="sign-field" type="text" placeholder="Name">
+							<input class="sign-field" type="text" placeholder="Email or Phone Number">
+							<input class="sign-field" type="password" placeholder="Password">
+						</div>
+						<div class="sign-buttons">
+							<button class="button button-sign">Create Account</button>
+							<button class="button button-sign-icon">
+								<img src="./images/icons/Icon-Google.svg" alt="google-icon">
+								Sign up with Google
+							</button>
+						</div>
+						<p class="sign-to-login">Already have account? <a href="#">Log in</a></p>
 					</form>
 				</section>
 			</div>
