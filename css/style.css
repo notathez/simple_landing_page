@@ -44,6 +44,7 @@ input[type="number"] {
 }
 
 .main {
+	position: relative;
 	margin: 80px 0 140px 0;
 }
 
@@ -848,15 +849,21 @@ input[type="number"] {
 
 /* -------------- SIGNUP PAGE ----------*/ 
 
-.signup__inner {
-	/* padding: 60px 0 140px 0; */
-	display: flex;
-	/* gap: 129px; */
+.signup-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 805px;
+	width: calc((100% - 1200px)/2 + 650px);
+	object-fit: cover;
+	border-radius: 0 4px 4px 0;
 }
 
-.signup__inner > img {
-	padding: 0;
-	height: 100%;
+.signup__inner {
+	position: relative;
+	width: 100%;
+	justify-content: end;
+	display: flex;
 }
 
 .signup-form {
