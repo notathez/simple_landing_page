@@ -278,6 +278,10 @@ input[type="number"] {
 	text-underline-offset: 6px;
 }
 
+.header-menu__list-link.active {
+	text-decoration: underline;
+}
+
 .header-search-bar {
 	display: flex;
 	gap: 24px;
@@ -303,10 +307,6 @@ input[type="number"] {
 .header-action-bar img {
 	height: 32px;
 	width: 32px;
-}
-
-.active-link {
-	text-decoration: underline;
 }
 
 /* FOOTER */
