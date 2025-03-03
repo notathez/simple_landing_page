@@ -49,6 +49,10 @@ html, body {
 	white-space: nowrap;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 .button-primary {
 	padding: 16px 48px;
 	color: var(--color-white);
@@ -142,6 +146,10 @@ input[type="number"] {
 	border: none;
 	outline: none;
 	border-radius: 4px;
+}
+
+.input:hover {
+	cursor: text;
 }
 
 .input__search-bar {
@@ -377,6 +385,16 @@ input[type="number"] {
 	gap: 24px;
 	align-items: center;
 }
+
+.socials img {
+	transition: background-color 0.3s ease-in-out;
+}
+
+.socials img:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.096);
+	/* background-color: red; */
+}	
 
 .copyright {
 	position: relative;
@@ -1346,6 +1364,10 @@ input[type="number"] {
 	width: 20px;
 	height: 20px;
 	accent-color: var(--color-primary);
+}
+
+.checkbox-field input:hover {
+	cursor: pointer;
 }
 
 .billing-right {
