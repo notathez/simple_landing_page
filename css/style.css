@@ -350,7 +350,9 @@ input[type='radio']:hover {
 .footer-menu {
 	padding: 80px 0 60px 0;
 	display: flex;
-	gap: 87px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 50px;
 }
 
 .footer-menu__list {
@@ -451,6 +453,63 @@ input[type='radio']:hover {
 	margin-bottom: 10px;
 	height: 1px;
 	background-color: #141414;
+}
+
+@media (max-width: 1059px) {
+	.footer-menu {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 815px) {
+	.footer-menu__list {
+		text-align: center;
+		align-items: center;
+	}
+
+	.footer-menu__item {
+		width: 250px;
+	}
+
+	.footer-menu__title {
+		font-size: 1.1rem;
+	}
+
+	.footer-menu__exclusive {
+		font-size: 1.25rem;
+	}
+
+	.footer-menu__link,
+	.footer-menu__description {
+		font-size: 0.85rem;
+	}
+
+	.app-download {
+		justify-content: center;
+	}
+
+	.socials {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 381px) {
+	.footer-menu {
+		gap: 30px;
+	}
+
+	.footer-menu__list {
+		width: 90%;
+		text-align: center;
+		gap: 10px;
+	}
+
+	.copyright {
+		padding: 0 10px;
+		line-height: 1.5;
+		text-align: justify;
+		font-size: 0.75rem;
+	}
 }
 
 /* HERO SECTION */
