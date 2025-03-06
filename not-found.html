@@ -12,7 +12,7 @@
 <body>
 	
 	<div class="wrapper">
-<!-- 
+
 		<header class="top-header">
 			<div class="container">
 				<div class="top-header__inner">
@@ -32,8 +32,8 @@
 					<nav class="header-menu">
 						<ul class="header-menu__list">		
 							<li class="header-menu__list-item"><a href="/" class="header-menu__list-link">Home</a></li>
-							<li class="header-menu__list-item"><a href="#" class="header-menu__list-link">Contact</a></li>
-							<li class="header-menu__list-item"><a href="#" class="header-menu__list-link">About</a></li>
+							<li class="header-menu__list-item"><a href="not-found.html" class="header-menu__list-link">404</a></li>
+							<li class="header-menu__list-item"><a href="checkout.html" class="header-menu__list-link">Checkout</a></li>
 							<li class="header-menu__list-item"><a href="signup.html" class="header-menu__list-link">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -43,16 +43,47 @@
 							<img class="search-icon" src="./images/icons/icon-search.svg" alt="Search icon">
 						</div>
 						<div class="header-action-bar">
-							<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+							<a href="wishlist.html">
+								<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+							</a>
 							<img src="./images/icons/icon-cart.png" alt="Cart">
 							<img src="./images/icons/icon-user.png" alt="User">
+							<img class="hamburger-menu-icon" src="./images/icons/icon-menu.svg" alt="Menu">
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<main class="main">
+		<aside class="side-menu">
+			<div class="header-action-bar">
+				<a href="wishlist.html">
+					<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+				</a>
+				<img src="./images/icons/icon-cart.png" alt="Cart">
+				<img src="./images/icons/icon-user.png" alt="User">
+			</div>
+			<div class="search-bar">
+				<input class="input input__search-bar" type="text" placeholder="What are you looking for?">
+				<img class="search-icon" src="./images/icons/icon-search.svg" alt="Search icon">
+			</div>
+			<ul class="side-menu__links">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="not-found.html">404</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+				<li>
+					<a href="signup.html">Sign Up</a>
+				</li>
+			</ul>
+		</aside>
+
+		<!-- <main class="main">
 			<div class="container">
 				<div class="roadmap">
 					<span>Home</span>
@@ -164,8 +195,43 @@
 			<div class="copyright">
 				&copy; Copyright Rimel 2022. All right reserved
 			</div>
-		</footer>
+		</footer> 
 	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+    const sideMenu = document.querySelector(".side-menu");
+    const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
+    const header = document.querySelector(".header");
+    const topHeader = document.querySelector(".top-header");
+
+    function updateMenuPosition() {
+        const headerHeight = header.offsetHeight;
+        const topHeaderHeight = topHeader ? topHeader.offsetHeight : 0;
+        const totalHeight = headerHeight + topHeaderHeight;
+        
+        sideMenu.style.top = `${totalHeight}px`;
+        sideMenu.style.height = `calc(100vh - ${totalHeight}px)`;
+    }
+
+    function toggleMenu() {
+        sideMenu.classList.toggle("active");
+    }
+
+    function closeMenu(event) {
+        if (!sideMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+            sideMenu.classList.remove("active");
+        }
+    }
+
+    hamburgerIcon.addEventListener("click", toggleMenu);
+    document.addEventListener("click", closeMenu);
+    window.addEventListener("resize", updateMenuPosition);
+
+    updateMenuPosition();
+});
+
+	</script>
 
 </body>
 </html>
