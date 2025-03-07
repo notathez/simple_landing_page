@@ -32,8 +32,8 @@
 					<nav class="header-menu">
 						<ul class="header-menu__list">		
 							<li class="header-menu__list-item"><a href="/" class="header-menu__list-link active">Home</a></li>
-							<li class="header-menu__list-item"><a href="#" class="header-menu__list-link">Contact</a></li>
-							<li class="header-menu__list-item"><a href="#" class="header-menu__list-link">About</a></li>
+							<li class="header-menu__list-item"><a href="not-found.html" class="header-menu__list-link">404</a></li>
+							<li class="header-menu__list-item"><a href="checkout.html" class="header-menu__list-link">Checkout</a></li>
 							<li class="header-menu__list-item"><a href="signup.html" class="header-menu__list-link">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -43,14 +43,45 @@
 							<img class="search-icon" src="./images/icons/icon-search.svg" alt="Search icon">
 						</div>
 						<div class="header-action-bar">
-							<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+							<a href="wishlist.html">
+								<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+							</a>
 							<img src="./images/icons/icon-cart.png" alt="Cart">
 							<img src="./images/icons/icon-user.png" alt="User">
+							<img class="hamburger-menu-icon" src="./images/icons/icon-menu.svg" alt="Menu">
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
+
+		<aside class="side-menu">
+			<div class="header-action-bar">
+				<a href="wishlist.html">
+					<img src="./images/icons/icon-wishlist.png" alt="Wishlist">
+				</a>
+				<img src="./images/icons/icon-cart.png" alt="Cart">
+				<img src="./images/icons/icon-user.png" alt="User">
+			</div>
+			<div class="search-bar">
+				<input class="input input__search-bar" type="text" placeholder="What are you looking for?">
+				<img class="search-icon" src="./images/icons/icon-search.svg" alt="Search icon">
+			</div>
+			<ul class="side-menu__links">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="not-found.html">404</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+				<li>
+					<a href="signup.html">Sign Up</a>
+				</li>
+			</ul>
+		</aside>
 
 		<section class="hero-section">
 			<div class="container">
