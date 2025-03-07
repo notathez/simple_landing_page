@@ -914,6 +914,7 @@ input[type='radio']:hover {
 }
 
 .cards-list {
+	max-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 60px 30px;
@@ -921,13 +922,12 @@ input[type='radio']:hover {
 }
 
 .card {
-	width: 270px;
 	position: relative;
 }
 
 .card-image-wrapper {
 	position: relative;
-	width: 270px;
+	width: 100%;;
 	height: 250px;
 	background-color: var(--color-soft-gray);
 	border-radius: 4px;
@@ -1082,6 +1082,73 @@ input[type='radio']:hover {
 	background-color: var(--color-primary);
 	border-radius: 50%;
 }
+
+@media (max-width: 1200px) {
+	.cards-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 1024px) {
+	.cards-list {
+			gap: 40px 20px;
+	}
+
+	.card {
+			width: 100%;
+	}
+
+	.card-image-wrapper {
+			width: 100%;
+			height: 220px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cards-list {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px;
+	}
+
+	.card-image-wrapper {
+			height: 200px;
+	}
+
+	.card-details {
+			gap: 6px;
+	}
+
+	.add-to-cart-light {
+			bottom: 60px;
+	}
+}
+
+@media (max-width: 480px) {
+	.cards-list {
+			grid-template-columns: 1fr;
+	}
+
+	.card {
+			padding: 10px;
+	}
+
+	.card-image-wrapper {
+			height: 180px;
+	}
+
+	.card-options__icon {
+			padding: 4px;
+	}
+
+	.new-price {
+			font-size: 1rem;
+	}
+
+	.old-price {
+			font-size: 0.875rem;
+	}
+}
+
 
 .divider {
 	margin: 70px 0;
@@ -1498,6 +1565,30 @@ input[type='radio']:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media (max-width: 1024px) {
+
+	.wishlist-header {
+			font-size: 1.125rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.wishlist-section-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 15px;
+	}
+	.wishlist-header {
+			font-size: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.wishlist-header {
+			font-size: 0.875rem;
+	}
 }
 
 /* PRODUCT PAGE */
@@ -1935,7 +2026,7 @@ input[type='radio']:hover {
 
 @media (max-width: 480px) {
 	.container {
-		padding: 0 16px;
+		padding: 0 15px;
 	}
 
 	.roadmap {
