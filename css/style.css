@@ -799,6 +799,12 @@ input[type='radio']:hover {
 	cursor: pointer;
 }
 
+.hero-slider img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .slider-swap {
 	position: absolute;
 	display: flex;
@@ -832,6 +838,11 @@ input[type='radio']:hover {
 		width: 100%;
 		padding: 20px 16px;
 		border-right: none;
+	}
+
+	.submenu {
+		left: 20%;
+		width: auto;
 	}
 
 	.catalog-menu__item {
@@ -869,6 +880,12 @@ input[type='radio']:hover {
 		width: 12px;
 		height: 12px;
 	}
+
+	.submenu {
+		left: 30%;
+		width: auto;
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -886,11 +903,8 @@ input[type='radio']:hover {
 	}
 
 	.submenu {
-		position: absolute;
-		top: -5px;
-		left: 100%;
+		left: 50%;
 		width: auto;
-		padding: 15px;
 	}
 
 	.submenu ul li a {
@@ -911,7 +925,6 @@ input[type='radio']:hover {
 		height: 12px;
 	}
 }
-
 
 /* MAIN SECTION */
 
