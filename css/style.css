@@ -882,7 +882,7 @@ input[type='radio']:hover {
 	}
 
 	.submenu {
-		left: 30%;
+		left: 0%;
 		width: auto;
 	}
 
@@ -1562,7 +1562,6 @@ input[type='radio']:hover {
 	color: var(--color-light-gray);
 }
 
-/* Общие стили карточек */
 .playstation, 
 .women-collection,
 .speakers,
@@ -1575,7 +1574,6 @@ input[type='radio']:hover {
 	overflow: hidden;
 }
 
-/* Стандартное позиционирование */
 .playstation {
 	grid-row: 1 / 3;
 	grid-column: 1 / 3;
@@ -1604,7 +1602,6 @@ input[type='radio']:hover {
 	background-color: var(--color-black);
 }
 
-/* Контент внутри карточек */
 .featured-description {
 	position: absolute;
 	left: 29px;
@@ -1635,7 +1632,6 @@ input[type='radio']:hover {
 	color: var(--color-gray);
 }
 
-/* 🔹 АДАПТИВ 🔹 */
 @media (max-width: 1024px) {
 	.featured-cards {
 		grid-template-columns: repeat(2, 1fr);
@@ -2266,6 +2262,124 @@ input[type='radio']:hover {
 	font-weight: 500;
 	font-size: 0.75rem;
 }
+
+@media (max-width: 1024px) {
+	.product-card {
+			flex-direction: column;
+			align-items: center;
+			max-width: 100%;
+			gap: 40px;
+	}
+
+	.product-gallery {
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+	}
+
+	.main-image {
+			width: 100%;
+			max-width: 400px;
+			height: auto;
+			padding: 0 15px;
+	}
+
+	.thumbnail-slider {
+			flex-direction: row;
+			justify-content: center;
+			gap: 10px;
+	}
+
+	.thumbnail {
+			width: 80px;
+			height: 80px;
+			padding: 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.product-info-wrapper {
+			width: 100%;
+			padding: 0 15px;
+	}
+
+	.product-name {
+			font-size: 1.25rem;
+	}
+
+	.product-price {
+			font-size: 1.25rem;
+	}
+
+	.color-variants, .size-variants {
+			font-size: 1rem;
+			gap: 16px;
+	}
+
+	.size-list__item {
+			width: 28px;
+			height: 28px;
+			line-height: 28px;
+			font-size: 0.75rem;
+	}
+
+	.purchaze-variants {
+			flex-direction: column;
+			align-items: center;
+			gap: 12px;
+	}
+
+	.quantity {
+			width: 100%;
+			justify-content: space-between;
+	}
+}
+
+@media (max-width: 480px) {
+	.product-card {
+			gap: 20px;
+	}
+
+	.product-gallery {
+			gap: 10px;
+	}
+
+	.thumbnail-slider {
+			gap: 5px;
+	}
+
+	.thumbnail {
+			width: 60px;
+			height: 60px;
+			padding: 3px;
+	}
+
+	.product-info-wrapper {
+			padding: 0 10px;
+	}
+
+	.product-name {
+			font-size: 1rem;
+	}
+
+	.product-price {
+			font-size: 1rem;
+	}
+
+	.order-variants {
+			gap: 16px;
+	}
+
+	.purchaze-variants {
+			flex-direction: column;
+			align-items: center;
+	}
+
+	.button, .button-icon {
+			width: 100%;
+	}
+}
+
 
 /* CHECKOUT PAGE */
 
